@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.logo {
+  background-color: #222; /* header arka plan rengi */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap; /* Butonlar satırı taşarsa alt satıra geçsin */
+  justify-content: center;
+  gap: 15px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.options button {
+  flex: 1 1 80px; /* Esneklik ayarı: min 80px genişlikte olsun, alan varsa büyüsün */
+  max-width: 120px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #005f73;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+
+.options button:hover {
+  background-color: #0a9396;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* Tüm sayfa yüksekliği için gerekli ayarlar */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* footer zaten tanımlanmış, ekstra işlem gerekmez */
